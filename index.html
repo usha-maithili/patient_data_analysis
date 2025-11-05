@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Patient Dashboard aaaaaaa- Jessica Taylor</title>
+
+  <!-- Chart.js CDN (v4) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== HEADER BAR START ===== -->
+  <header class="topbar">
+    <!-- Left: Logo -->
+    <div class="top-left">
+      <img src="assets/TestLogo.svg" alt="TechCare Logo" class="logo-img" />
+    </div>
+
+    <!-- Center: Navigation -->
+    <nav class="top-nav">
+      <ul>
+        <li><img src="assets/homeButton.svg" alt=""> Overview</li>
+        <li class="active"><img src="assets/groupImage.svg" alt=""> Patients</li>
+        <li><img src="assets/calendar.svg" alt=""> Schedule</li>
+        <li><img src="assets/messageIcon.svg" alt=""> Message</li>
+        <li><img src="assets/transactionIcon.svg" alt=""> Transactions</li>
+      </ul>
+    </nav>
+
+    <!-- Right: Doctor Info -->
+    <div class="top-right">
+      <div class="doctor-card">
+        <img src="assets/jose.png" alt="Dr. Jose Simmons" class="doctor-pic" />
+        <div class="doctor-info">
+          <div class="name">Dr. Jose Simmons</div>
+          <div class="role">General Practitioner</div>
+        </div>
+        <img src="assets/settings.svg" alt="Settings" class="icon-small" />
+        <img src="assets/moreVertical.svg" alt="More Options" class="icon-small" />
+      </div>
+    </div>
+  </header>
+  <!-- ===== HEADER BAR END ===== -->
+
+  <!-- ===== MAIN DASHBOARD CONTENT ===== -->
+  <div class="container">
+    <!-- Sidebar -->
+<!-- Sidebar -->
+<aside class="sidebar">
+  <!-- Sidebar Header -->
+  <header class="sidebar-header">
+    <div class="sidebar-top">
+      <h3>Patients</h3>
+      <img src="assets/searchButton.svg" alt="Search" class="search-icon" />
+    </div>
+  </header>
+
+  <!-- Scrollable Patient List -->
+  <ul class="patient-list">
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/EmilyWilliams.png" alt="Emily" class="patient-img" />
+        <div class="info">
+          <div class="name">Emily Williams</div>
+          <div class="details">Female, 18</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/JessicaTaylor.png" alt="Ryan" class="patient-img" />
+        <div class="info">
+          <div class="name">Ryan Johnson</div>
+          <div class="details">Male, 45</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/BrandonMitchell.png" alt="Brandon" class="patient-img" />
+        <div class="info">
+          <div class="name">Brandon Mitchell</div>
+          <div class="details">Male, 36</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item active">
+      <div class="left">
+        <img src="assets/RyanJohnson.png" alt="Jessica" class="patient-img" />
+        <div class="info">
+          <div class="name">Jessica Taylor</div>
+          <div class="details">Female, 28</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/SamanthaJohnson.png" alt="Samantha" class="patient-img" />
+        <div class="info">
+          <div class="name">Samantha Johnson</div>
+          <div class="details">Female, 56</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/AshleyMadness.png" alt="Ashley" class="patient-img" />
+        <div class="info">
+          <div class="name">Ashley Madness</div>
+          <div class="details">Female, 54</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/OliviaBrown.png" alt="Olivia" class="patient-img" />
+        <div class="info">
+          <div class="name">Olivia Brown</div>
+          <div class="details">Female, 32</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/TylerDavis.png" alt="Tyler" class="patient-img" />
+        <div class="info">
+          <div class="name">Tyler Davis</div>
+          <div class="details">Male, 19</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/KevinAnderson.png" alt="Kevin" class="patient-img" />
+        <div class="info">
+          <div class="name">Kevin Anderson</div>
+          <div class="details">Male, 30</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+    <li class="patient-item">
+      <div class="left">
+        <img src="assets/DylanThompson.png" alt="Dylan" class="patient-img" />
+        <div class="info">
+          <div class="name">Dylan Thompson</div>
+          <div class="details">Male, 36</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+
+       <li class="patient-item">
+      <div class="left">
+        <img src="assets/MikeNolan.png" alt="Mike" class="patient-img" />
+        <div class="info">
+          <div class="name">Mike Nolan</div>
+          <div class="details">Male, 31</div>
+        </div>
+      </div>
+      <img src="assets/horizontalmore.svg" alt="More" class="dots-icon" />
+    </li>
+  </ul>
+</aside>
+
+
+    <!-- Main content -->
+   <main class="main">
+  <section class="diagnosis-history">
+    <h2>Diagnosis History</h2>
+
+    <!-- Blood Pressure Chart Card -->
+  
+<div class="card chart-card">
+  <div class="chart-header">
+    <h3>Blood Pressure</h3>
+    <div class="chart-period">
+      <span>Last 6 months</span>
+      <img src="assets/expandMore.svg" alt="Expand" class="expand-icon" />
+    </div>
+  </div>
+
+  <div class="chart-inner">
+    <!-- Chart Canvas -->
+    <div class="chart-left">
+      <canvas id="bpChart" height="200"></canvas>
+    </div>
+
+    <!-- Legend Info on the Right -->
+    <div class="chart-right">
+      <div class="legend-item">
+        <span class="legend-dot systolic"></span>
+        <span class="legend-label">Systolic</span>
+      </div>
+      <div class="legend-value">160</div>
+      <div class="legend-note up">
+        <img src="assets/ArrowUp.svg" alt="up" class="arrow-icon" />
+        Higher than Average
+      </div>
+
+      <div class="legend-item" style="margin-top: 10px;">
+        <span class="legend-dot diastolic"></span>
+        <span class="legend-label">Diastolic</span>
+      </div>
+      <div class="legend-value">78</div>
+      <div class="legend-note down">
+        <img src="assets/ArrowDown.svg" alt="down" class="arrow-icon" />
+        Lower than Average
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Cards Row -->
+    <div class="cards-row">
+      <!-- Respiratory Rate -->
+      <div class="stat-card" style="background-color: #E0F3FA;">
+        <img src="assets/respiratoryrate.svg" alt="lungs" class="stat-icon-img" />
+        <div class="stat-title">Respiratory Rate</div>
+        <div id="respRate" class="stat-value">20 bpm</div>
+        <div class="stat-note">Normal</div>
+      </div>
+
+      <!-- Temperature -->
+      <div class="stat-card" style="background-color: #FFE6E9;">
+        <img src="assets/temperature.svg" alt="temperature" class="stat-icon-img" />
+        <div class="stat-title">Temperature</div>
+        <div id="temp" class="stat-value">98.6°F</div>
+        <div class="stat-note">Normal</div>
+      </div>
+
+      <!-- Heart Rate -->
+      <div class="stat-card" style="background-color: #FFE6F1;">
+        <img src="assets/heartbpm.svg" alt="heart" class="stat-icon-img" />
+        <div class="stat-title">Heart Rate</div>
+        <div id="hr" class="stat-value">78 bpm</div>
+        <div class="stat-note">
+          <img src="assets/ArrowDown.svg" alt="down" class="arrow-icon" />
+          Lower than Average
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic Table -->
+    <div class="diagnostic-list card">
+      <h3>Diagnostic List</h3>
+      <table id="diagnosticTable">
+        <thead>
+          <tr><th>Problem/Diagnosis</th><th>Description</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+
+    <!-- Right profile -->
+   <aside class="profile">
+  <!-- Profile Top Card -->
+  <div class="profile-card card">
+    <img id="profilePic" class="profile-pic" src="" alt="profile" />
+    <h3 id="pname" class="profile-name">Jessica Taylor</h3>
+
+    <div class="profile-detail">
+      <img src="assets/BirthIcon.svg" alt="dob" class="profile-icon" />
+      <div>
+        <div class="label">Date Of Birth</div>
+        <div id="dob" class="value">--</div>
+      </div>
+    </div>
+
+    <div class="profile-detail">
+      <img src="assets/FemaleIcon.svg" alt="gender" class="profile-icon" />
+      <div>
+        <div class="label">Gender</div>
+        <div id="gender" class="value">--</div>
+      </div>
+    </div>
+
+    <div class="profile-detail">
+      <img src="assets/PhoneIcon.svg" alt="contact" class="profile-icon" />
+      <div>
+        <div class="label">Contact Info</div>
+        <div id="phone" class="value">--</div>
+      </div>
+    </div>
+
+    <div class="profile-detail">
+      <img src="assets/PhoneIcon.svg" alt="emergency" class="profile-icon" />
+      <div>
+        <div class="label">Emergency Contacts</div>
+        <div id="emergency" class="value">--</div>
+      </div>
+    </div>
+
+    <div class="profile-detail">
+      <img src="assets/InsuranceIcon.svg" alt="insurance" class="profile-icon" />
+      <div>
+        <div class="label">Insurance Provider</div>
+        <div id="insurance" class="value">--</div>
+      </div>
+    </div>
+
+    <button id="showAll" class="btn">Show All Information</button>
+  </div>
+
+  <!-- Lab Results Card -->
+  <div class="lab card">
+    <h4>Lab Results</h4>
+    <ul id="labResults" class="lab-list"></ul>
+  </div>
+</aside>
+
+  </div>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
